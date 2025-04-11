@@ -58,7 +58,7 @@ print("\nDot Product of vector1 and vector2:", Vector.dot_product(vector1, vecto
 print("\nOrigin vector:", Vector.origin())
 
 # Testing error handling with non-Vector input.
-print("\n------ Q4: Testing with non-Vector input ------")
+print("\n------ Testing with non-Vector input ------")
 try:
     # This should fail because 5 is not a Vector.
     result = vector1 + 5
