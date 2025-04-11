@@ -115,7 +115,7 @@ class Employee:
 
 
 print("Q2: Build a class Employee with multiple constructors")
-print("---------------------------------------------------------")
+print("___________________________________________________________________")
 
 # Using the primary constructor:
 print("\nUsing __init__:")
@@ -134,6 +134,12 @@ print("\nUsing from_dict:")
 emp1 = Employee.from_dict({'emp_id': "001", 'name': "Alice", 'department': "IT"})  # Reassigning emp1 using from_dict
 print(emp1.display_info())
 print("METHOD: initialized using from_dict() | Employee.from_dict({'emp_id': '001', 'name': 'Alice', 'department': 'IT'})")
+
+# Demonstrate the use of the static method is_valid_department:
+print("\nUsing is_valid_department:")
+dept_to_check = "IT"
+is_valid = Employee.is_valid_department(dept_to_check)
+print(f"Department '{dept_to_check}' is valid: {is_valid}")
 
 print("\n==================================================================\n")
 
